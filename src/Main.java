@@ -17,21 +17,22 @@ public class Main {
 
         System.out.println("Задача 2");
 
-        int PayForWeek = -1;
+        int maxPayForWeek = pay[0];
+        int minPayForWeek = pay[0];
         for (int i = 0; i < pay.length; i++) {
             final int current = pay[i];
-            if (current > PayForWeek) {
-                PayForWeek = current;
+            if (current > maxPayForWeek) {
+                maxPayForWeek = current;
             }
         }
-        System.out.println("Максимальная сумма трат в неделю составила " + PayForWeek + " рублей");
+        System.out.println("Максимальная сумма трат в неделю составила " + maxPayForWeek + " рублей");
         for (int i = 0; i < pay.length; i++) {
             final int current = pay[i];
-            if (current < PayForWeek) {
-                PayForWeek = current;
+            if (current < minPayForWeek) {
+                minPayForWeek = current;
             }
         }
-        System.out.println("Минимальная сумма трат в неделю составила " + PayForWeek + " рублей");
+        System.out.println("Минимальная сумма трат в неделю составила " + minPayForWeek + " рублей");
 
         System.out.println("Задача 3");
 
