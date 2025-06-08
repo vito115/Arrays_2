@@ -45,8 +45,9 @@ public class Main {
         System.out.println("Задача 4");
 
         char[] reserveFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i = reserveFullName.length - 1; i >= 0; i--) {
-            System.out.print(reserveFullName[i]);
+        int[] correctName = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+        for (int i = 0; i < correctName.length; i++) {
+            System.out.print(reserveFullName[correctName[i]]);
+                }
+            }
         }
-    }
-}
